@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Automobile Passione</title>
+    <link rel="shortcut icon" href="./Assets/Images/logo8.png" type="image/x-icon">
+</head>
+<body>
+    <script>
+        function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+    
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible =280;
+    
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+    window.addEventListener("scroll", reveal);
+
+        function reveal2() {
+      var reveals = document.querySelectorAll(".reveal2");
+    
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible =280;
+    
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+    window.addEventListener("scroll", reveal2);
+
+    function reveal3() {
+      var reveals = document.querySelectorAll(".reveal3");
+    
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible =320;
+    
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+    window.addEventListener("scroll", reveal3);
+
+    </script>
+    <header>
+        <ul>
+            <a href="#AboutUs">Nossa Filosofia</a>
+            <a href="#Servicos">Serviços</a>
+            <a href="#Contato">Contato</a>
+            <a href="#Estoque">Estoque</a>
+        </ul>
+    </header>
+    <div class="MainSection">
+        <div class="PhotoText">
+            <h1>Automobile Passione</h1>
+            <h6>Arte em negociação automotiva.</h6>
+        </div>
+        <div class="BackgroundPhoto">
+        </div>
+        <img src="./Assets/Images/upchevron.png" alt="" class="Chevron">
+    </div>
+    <div class="FirstSection">
+        <div class="AboutUs">
+            <span class="reveal">
+                <h1 id="AboutUs" style="margin-bottom: 5%;">Nossa Filosofia</h1>
+                <h4 style="font-weight: 100; font-family: 'Montserrat', sans-serif;">A Automobile Passione, tem como víes a intermediação de veículos de luxo e superesportivos. Atuamos com transparência, confiança e principalmente qualidade, nossos veículos são verificados e certificados para garantir ao nosso futuro cliente uma compra segura. Nossa estrutura é de forma virtual, para que possamos otimizar o seu tempo, visando um melhor atendimento de forma individualizada com cara cliente e proprietário, para que a experiência da realização do sonho automobilístico seja única e inesquecível.</h4>
+            </span>
+        </div>
+    </div>
+    <div class="SecondSection">
+        <div class="Services"></div>
+        <span>
+            <ul class="SectionServices">
+                <h1 id="Servicos" class="reveal2" style="color: white; ">Nossos Serviços</h1>
+                    <a class="Glass reveal3" id="ServiceHover" href="">Compras</a>
+                    <a class="Glass reveal3" id="ServiceHover" href="">Vendas</a>
+                    <a class="Glass reveal3" id="ServiceHover" href="">Intermediações</a>
+                    <a class="Glass reveal3" id="ServiceHover" href="">Vistorias pré-compras</a>
+                </ul>
+        </span>
+    </div>
+    <div class="ThirdSection">
+        <h1 id="Contato">Contato</h1>
+        <h4>Entre em contato conosco através dos links abaixo, iremos ter o maior prazer em receber o seu contato.</h4>
+        <span class="Logos">
+            <img src='../../Assets/Images/whatsapp.png'onclick="window.open('https://wa.me/5511940777686?text=Olá%20gostaria%20de%20uma%20informação.')" />
+            <img onclick="window.open('https://instagram.com/the_garage_consulting?igshid=YmMyMTA2M2Y=')"  src='../../Assets/Images/instagram.png' />
+        </span>
+    </div>
+    <div class="Estoque">
+      <h1 id="Estoque">Estoque</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100 reveal3">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="./Assets/Images/CLS63/1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/CLS63/2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/CLS63/3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/CLS63/4.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/CLS63/5.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/CLS63/6.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Mercedes CLS63 AMG</h5>
+                  <p class="card-text">CLS63 AMG - V8 BiTurbo </p>
+                  <b>2008/2008</b>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                 Descrição completa
+                </button>
+
+                <!-- Modal -->
+                <div class="modal" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel1">Descrição</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        CLS 63 AMG - V8 BiTurbo - 557 cv 2012/2012 <br/><br/>
+                      <span>
+                        Blindada BSS <br/><br/>
+                        54 mil quilômetros <br/><br/>
+                        Revisões na Mercedes Benz<br/><br/> 
+                        Interior preto <br/><br/>
+                        Vidros sem delaminações<br/><br/>
+                        IPVA 2022 Quitado<br/><br/>
+                        4 pneus novos!<br/><br/>
+                        <b style="color: red;">VENDIDA</b>
+                      </span>     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="col">
+              <div class="card h-100 reveal3">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="./Assets/Images/435i/1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/435i/2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/435i/3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/435i/4.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/435i/5.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/435i/6.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">BMW 435i</h5>
+                  <p class="card-text">BMW 435i - V6 Bi-turbo </p>
+                  <b>2014/2014</b>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                 Descrição completa
+                </button>
+
+                <!-- Modal -->
+                <div class="modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Descrição</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        BMW 435i - V6 Bi-turbo <br/><br/>
+                      <span>
+                         Inlet Pipe ECS <br/><br/>
+                         Escapamento Borla Atack<br/><br/>
+                         Máscara Negra <br/><br/>
+                         Angel Eyes Importado <br/><br/>
+                         Intercooler Metal Horse <br/><br/>
+                         Válvula GFB <br/><br/>
+                         PaddleShift de M3 <br/><br/>
+                         Bobinas de Alta Performance Importadas <br/><br/>
+                         Intake Importado injen<br/><br/>
+                        Pneus michellin PS4S <br/><br/>
+                        Rodas M4CS <br/><br/>
+                        Discos de freio bielstein <br/><br/>
+                        envelopamento Oracal<br/><br/>
+                        KIT COMPLETO WMI AEM <br/><br/>
+                         Jb4 com cabo OBD + Bluetooth <br/><br/>
+                         Bomba de Baixa Walbro 450 LPH <br/><br/>
+                        Port Inject fuel it<br/><br/>
+                        Turbina Pure stg2 <br/><br/>
+                        470WHP (conservador)<br/><br/>
+                        Tmap n20<br/><br/>
+                        Kit Charge Pipe<br/><br/>
+                        Volante Série M de Alcântara com Led e moldura em carbono com aço escovado<br/><br/>
+                        Stg3 BTM PERFORMANCE<br/><br/>
+                        Difusor traseiro em fibra de carbono<br/><br/>
+                        Ponteiras série M fibra de carbono<br/><br/>
+                        Aerofólio M4CS em fibra de carbono<br/><br/>
+                        Frontlip e boomerang em fibra de carbono<br/><br/>
+                        Lip lateral em fibra de carbono<br/><br/>
+                        Grade filet duplo<br/><br/>
+                        Capas de retrovisor estilo M<br/><br/>
+                        Setas de retrovisor dinâmicas<br/><br/>
+                        Rodas com parafuso de segredo<br/><br/>
+                        Tratamento Gyeon 5 anos<br/><br/>
+                        <b>Valor: R$ 320.000,00</b>
+                      </span>     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+ 
+            <div class="col">
+              <div class="card h-100 reveal3">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="./Assets/Images/GolfGti/1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/GolfGti/2.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/GolfGti/3.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/GolfGti/4.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/GolfGti/5.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">Golf GTI</h5>
+                  <p class="card-text">Golf GTI - 31 mil km Originais, impecável</p>
+                  <b>2017/2018</b>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                 Descrição completa
+                </button>
+
+                <!-- Modal -->
+                <div class="modal" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Descrição</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Volkswagem Golf GTI - 2017 <br/><br/>
+                      <span>
+                        Cinza Carbono (Exclusiva GTI) <br/><br/>
+                        31 mil quilômetros <br/><br/>
+                        Interior em Tecido RECARO<br/><br/> 
+                        ACC + Xenôn Original C/ Lavador <br/><br/>
+                        Plásticos de fábrica no Volante e Multimídia<br/><br/>
+                        Pneus Originais de fábrica EAGLE F1<br/><br/>
+                        TODAS revisões na VW (Carimbadas no Manual)<br/><br/>
+                        Documentação 2022 Quitado <br/><br/>
+                        <b>Valor: R$ 169.000,00</b>
+                      </span>     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="col">
+              <div class="card h-100 reveal3">
+                <div id="carouselExampleControls"class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="./Assets/Images/BMW528i/1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/BMW528i/2.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/BMW528i/3.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/BMW528i/4.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/BMW528i/5.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./Assets/Images/BMW528i/6.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                <div class="card-body">
+                  <h5 class="card-title">BMW 528i</h5>
+                  <p class="card-text">BMW 528i Blindada, impecável </p>
+                  <b>2016/2016</b>
+                </div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                 Descrição completa
+                </button>
+
+                <!-- Modal -->
+                <div class="modal" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Descrição</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        BMW 528i - 245cv - Blindada <br/><br/>
+                      <span>
+                        Teto-Solar & Xenôn Original <br/><br/>
+                        75 mil quilômetros <br/><br/>
+                        Interior em Couro claro<br/><br/> 
+                        Unica desse ano anunciada <br/><br/>
+                        Vidros sem delaminações<br/><br/>
+                        Kit M Original BMW<br/><br/>
+                        45,4  kg/kgfm de torque<br/><br/>
+                        Documentação 2022 Quitado <br/><br/>
+                        <b>Valor: R$ 180.000,00</b>
+                      </span>     
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>Desenvolvido por Gabriel Ribeiro</p>
+</footer>
+</html>
